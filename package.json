@@ -1,0 +1,19 @@
+{
+  "name": "db-sync",
+  "version": "0.1.0",
+  "description": "数据同步工具",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "mongodb": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MaXiaojun <somaxj@163.com>",
+  "license": "ISC"
+}
