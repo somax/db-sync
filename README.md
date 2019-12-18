@@ -8,15 +8,19 @@
 
 ### 环境变量
 ```
-MONGO_URI = 'mongodb://localhost:27017'
-MONGO_DB_NAME = 'test'
-MONGO_COLLECTION_NAME = 'test'
+MONGO_URI = mongodb://localhost:27017
+MONGO_DB_NAME = test
+MONGO_COLLECTION_NAME = test
 SYNC_FROM = 0
 SYNC_STEP_SIZE = 100
 SYNC_WAIT_TIME = 2000
 
-ES_URI = 'http://localhost:9200/test'
-ES_BASIC_AUTH = ''
+SYNC_TIME_FIELD = timestamp
+SYNC_TIME_FROM = 2019-11-21T00:00:00.000+08:00
+SYNC_TIME_TO = 
+
+ES_URI = http://localhost:9200/test
+ES_BASIC_AUTH = 
 ```
 
 ### 运行
@@ -35,5 +39,8 @@ docker run --rm --name db-sync -it \
     -e SYNC_WAIT_TIME=2000 \
     -e ES_URI='http://localhost:9200/test' \
     -e ES_BASIC_AUTH='' \
+    -e SYNC_TIME_FIELD='timestamp' \
+    -e SYNC_TIME_FROM='2019-11-21T00:00:00.000+08:00' \
+    -e SYNC_TIME_TO='' \
     dbsync
 ```
