@@ -22,6 +22,7 @@ SYNC_TIME_TO =
 ES_URI = http://localhost:9200/test
 ES_BASIC_AUTH = 
 ```
+> `SYNC_TIME_FROM` 及 `SYNC_TIME_TO` 是用标准ISO时间格式, 不支持数字时间戳, `SYNC_TIME_TO` 留空表示不断同步最新的
 
 ### 运行
 ```

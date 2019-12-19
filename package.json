@@ -1,6 +1,6 @@
 {
   "name": "db-sync",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "数据同步工具",
   "main": "index.js",
   "directories": {
